@@ -30,6 +30,11 @@ plt.grid()
 plt.title('Diagrama de Bifuracion')
 plt.savefig('bifuracion.png')
 
+delta  = (F[1] - F[0])/(F[2]-F[1])
+
+archivo = open("valorDelta.txt","a")
+archivo.write(delta)
+archivo.close()
 
 # In[ ]:
 
